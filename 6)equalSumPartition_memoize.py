@@ -1,3 +1,4 @@
+#https://leetcode.com/problems/partition-equal-subset-sum/
 def can_partition(nums):
     # Calculate the total sum of the numbers in the input array..
     total_sum = sum(nums)
