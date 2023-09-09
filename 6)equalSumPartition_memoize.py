@@ -1,6 +1,6 @@
 #https://leetcode.com/problems/partition-equal-subset-sum/
 def can_partition(nums):
-    # Calculate the total sum of the numbers in the input array..
+    # Calculate the total sum of the numbers in the input array.
     total_sum = sum(nums)
     
     # If the total sum is odd, it cannot be divided into two equal parts.
