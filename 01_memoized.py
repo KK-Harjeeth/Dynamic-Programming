@@ -4,7 +4,7 @@ class Solution:
         def memo(W,wt,val,n):
             if n == 0 or W == 0:
                 return 0
-            if t[n][W] != -1: #if already calculated return it 
+            if t[n][W] != -1: #if present function's return value is already computed and stored in matrix 't'  then , return it without computing it again.
                 return t[n][W]
             if wt[n - 1] <= W:
                 t[n][W] = max(val[n - 1] + memo(W - wt[n - 1], wt, val, n - 1), memo(W, wt, val, n - 1))
